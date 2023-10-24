@@ -1,16 +1,12 @@
 import AllPosts from "./pages/AllPosts.vue";
 import SinglePost from "./pages/SinglePost.vue";
-import Form from "./pages/Form.vue";
+import TodoForm from "./pages/TodoForm.vue";
 /////////////////////////
 // Array of Routes
 /////////////////////////
 export default [
-    // main page that shows all todos
     { path: "/", component: AllPosts },
-    // page for seeing an individual todo
     { path: "/post/:id", component: SinglePost, name: "post" },
-    // route for creating a new todo
-    { path: "/new", component: Form },
-    // route for updating a todo
-    { path: "/edit", component: Form },
+    { path: "/new", component: TodoForm },
+    { path: "/edit/:id", component: TodoForm, name: "edit" }, // Use dynamic parameter
 ];
