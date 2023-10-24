@@ -1,13 +1,10 @@
 <template>
-  <div>
-    <h1>Our Todos</h1>
-    <router-view />
-  </div>
+    <h1>SinglePost</h1>
 </template>
 
 <script>
 export default {
-  name: "App",
+    name: "SinglePost",
 };
 </script>
 

@@ -1,14 +1,11 @@
 <template>
-  <div>
-    <h1>Our Todos</h1>
-    <router-view />
-  </div>
+    <h1>Form</h1>
 </template>
-
+  
 <script>
 export default {
-  name: "App",
+    name: "Form",
 };
 </script>
-
+  
 <style></style>
